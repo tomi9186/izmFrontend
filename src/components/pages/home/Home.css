@@ -1,0 +1,26 @@
+.hero{
+	background-color: var(--secondary);
+	overflow: hidden;
+}
+
+.hero .row{
+	align-items: center;
+}
+
+.hero h1{
+	font-size: 96px;
+	margin-bottom: 30px;
+	color: var(--primary);
+}
+
+.hero p{
+	margin-bottom: 52px;
+}
+
+.hero .btn, .btn, .btn:hover{
+	background-color: var(--primary);
+	color: #fff;
+	padding: 0px 24px;
+	line-height: 48px;
+	border-radius: 90px;
+}

@@ -1,0 +1,121 @@
+.login-intro{
+	background-color: #353945;
+	min-height: 100vh;
+	padding-top: 52px;
+	padding-bottom: 52px;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-intro div{
+	max-width: 420px;
+}
+
+.login-intro img{
+	margin-left: 52px;
+	max-width: 196px;
+}
+
+.login-intro h1{
+	color: #fff;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.login-intro p{
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.7;
+	letter-spacing: -1%;
+}
+
+.login-form{
+	display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.login-form input, .login-form label, .login-form button{
+	display: block;
+	width: 100%;
+}
+
+.login-form div{
+	width: 100%;
+    max-width: 424px;
+    margin: 0 auto;
+}
+
+.login-form h2{
+	font-size: 28px;
+}
+
+.login-form p, .login-form a{
+	font-size: 14px;
+	color: #718096;
+	text-decoration: none;
+}
+
+.login-form p.sign-up{
+	font-weight: bold;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.login-form p.sign-up a{
+	color: #141416;
+}
+
+.login-form label{
+	font-size: 14px;
+}
+
+.login-form input{
+	background-color: #EDF2F7;
+	border-radius: 6px;
+	font-size: 15px;
+	line-height: 46px;
+	border: none;
+	padding: 0 12px;
+}
+
+.login-form button{
+	background-color: #141411;
+	color: #fff;
+	border-radius: 90px;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 11px 24px;
+	border: none;
+}
+
+.login-form input[type="checkbox"]{
+	display: inline;
+    width: auto;
+    vertical-align: middle;
+}
+
+.alert-danger{
+	padding: 12px;
+}
+
+form.loading{ 
+	position: relative;
+}
+form.loading::after{
+	content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background-color: #fff;
+    background-image: url(https://miro.medium.com/v2/resize:fit:882/1*9EBHIOzhE1XfMYoKz1JcsQ.gif);
+    background-size: 160px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.9;
+}
