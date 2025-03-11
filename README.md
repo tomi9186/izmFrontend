@@ -1,6 +1,6 @@
 # Frontend Developer Tečaj - React Aplikacija
 
-Ovo je frontend aplikacija razvijena tijekom tečaja za program **Frontend Developer**. Aplikacija je izrađena pomoću **Create React App** i koristi **React Router**, **Bootstrap**, **FontAwesome**, te se povezuje s **WordPress API** za autentifikaciju i dohvaćanje podataka. Koristili smo Slick!
+Ovo je frontend aplikacija razvijena tijekom tečaja za program **Frontend Developer**. Aplikacija je izrađena pomoću **Create React App** i koristi **React Router**, **Bootstrap**, **FontAwesome**, te se povezuje s **WordPress API** za autentifikaciju i dohvaćanje podataka.
 
 ## Tehnologije i knjižnice
 
