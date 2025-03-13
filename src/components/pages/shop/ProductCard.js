@@ -1,9 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import './Shop.css';
 
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, onAddToCart }) => {
+
 
     const addToCart = () => {
 
@@ -28,6 +29,8 @@ const ProductCard = ({ product }) => {
         }
 
         localStorage.setItem('cart', JSON.stringify(cart));
+
+        onAddToCart();
     }
 
     return (

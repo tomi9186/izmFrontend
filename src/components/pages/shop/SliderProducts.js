@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const SliderProducts = ({category, limit, sectionName}) => {
+const SliderProducts = ({category, limit, sectionName, onAddToCart}) => {
 
     const [products, setProducts] = useState([]);
 
@@ -32,7 +32,7 @@ const SliderProducts = ({category, limit, sectionName}) => {
             <h2 className="pt-4 pb-2">{sectionName}</h2>
             <Slider {...heroCategories}>
                 {products.map((product) => (
-                    <ProductCard product={product} />
+                    <ProductCard onAddToCart={onAddToCart} product={product} />
                 ))}
             </Slider>
         </div>

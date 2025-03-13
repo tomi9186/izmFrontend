@@ -9,6 +9,11 @@ import './Shop.css';
 
 const Shop = () => {
 
+    const [showCart, setShowCart] = useState(false);
+    const toggleCart = () => {
+        setShowCart(true);
+    };
+
     const [categories, setCategories] = useState([]);    
     useEffect(
         () => {
@@ -103,9 +108,16 @@ const Shop = () => {
                 </Slider>
             </div>
 
-            <SliderProducts category="smartphones" limit="8" sectionName="Najprodavaniji proizvodi" />
+            <SliderProducts onAddToCart={toggleCart} category="smartphones" limit="8" sectionName="Najprodavaniji proizvodi" />
 
-            <SliderProducts category="beauty" limit="8" sectionName="Najbolje ocjenjeni proizvodi" />
+            <SliderProducts onAddToCart={toggleCart} category="beauty" limit="8" sectionName="Najbolje ocjenjeni proizvodi" />
+
+                <div className={"cart-sidebar " + (showCart ? "open" : "")}>
+                    <button className="close-btn" onClick={() => setShowCart(false)}>❌</button>
+                    <h3>Košarica</h3>
+                    <p>Ovdje će se prikazati proizvodi.</p>
+                    <button className="btn btn-primary">Pogledaj košaricu</button>
+                </div>
 
 
         </div>
